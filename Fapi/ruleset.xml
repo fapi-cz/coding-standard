@@ -10,6 +10,7 @@
 		<exclude name="PSR1.Classes.ClassDeclaration.MultipleClasses"/>
 
 		<exclude name="Squiz.Functions.GlobalFunction.Found"/>
+		<exclude name="SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter"/>
 
 		<exclude name="SlevomatCodingStandard.Classes.SuperfluousInterfaceNaming.SuperfluousSuffix"/>
 		<exclude name="SlevomatCodingStandard.Classes.SuperfluousTraitNaming.SuperfluousSuffix"/>

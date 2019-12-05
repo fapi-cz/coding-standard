@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ruleset name="FAPI">
+	<config name="installed_paths" value="./../../slevomat/coding-standard"/><!-- relative path from PHPCS source location -->
+
 	<rule ref="Generic.Arrays.DisallowLongArraySyntax"/>
 	<rule ref="Generic.Classes.DuplicateClassName"/>
 	<rule ref="Generic.CodeAnalysis.EmptyStatement">
@@ -21,7 +23,7 @@
 	</rule>
 	<rule ref="Generic.Files.InlineHTML"/>
 	<rule ref="Generic.Formatting.SpaceAfterCast"/>
-<!--	<rule ref="Generic.Functions.OpeningFunctionBraceBsdAllman"/>-->
+	<!--	<rule ref="Generic.Functions.OpeningFunctionBraceBsdAllman"/>-->
 	<rule ref="Generic.NamingConventions.ConstructorName"/>
 	<rule ref="Generic.NamingConventions.UpperCaseConstantName"/>
 	<rule ref="Generic.NamingConventions.CamelCapsFunctionName"/>
@@ -222,13 +224,12 @@
 	<rule ref="Squiz.WhiteSpace.SuperfluousWhitespace.EmptyLines">
 		<severity>5</severity>
 	</rule>
-	<rule ref="../../slevomat/coding-standard">
+	<rule ref="../../../slevomat/coding-standard">
 		<exclude name="SlevomatCodingStandard.Commenting.DisallowOneLinePropertyDocComment.OneLinePropertyComment"/>
 		<exclude name="SlevomatCodingStandard.Commenting.UselessInheritDocComment.UselessInheritDocComment"/>
-		<exclude name="SlevomatCodingStandard.Files.TypeNameMatchesFileName"/>
 
 		<exclude name="SlevomatCodingStandard.Functions.TrailingCommaInCall.MissingTrailingComma"/> <!-- Disabled for support of php < 7.3 -->
-		<exclude name="SlevomatCodingStandard.Namespaces.UseOnlyWhitelistedNamespaces"/>
+		<exclude name="SlevomatCodingStandard.Namespaces.UseOnlyWhitelistedNamespaces.NonFullyQualified"/>
 		<exclude name="SlevomatCodingStandard.Namespaces.ReferenceUsedNamesOnly.ReferenceViaFallbackGlobalName"/>
 		<exclude name="SlevomatCodingStandard.Namespaces.FullyQualifiedGlobalFunctions.NonFullyQualified"/>
 		<exclude name="SlevomatCodingStandard.Namespaces.FullyQualifiedGlobalConstants.NonFullyQualified"/>
@@ -249,7 +250,7 @@
 				name="SlevomatCodingStandard.Operators.DisallowIncrementAndDecrementOperators.DisallowedPreIncrementOperator"/>
 		<exclude
 				name="SlevomatCodingStandard.Operators.DisallowIncrementAndDecrementOperators.DisallowedPostIncrementOperator"/>
-		<exclude name="SlevomatCodingStandard.Operators.RequireOnlyStandaloneIncrementAndDecrementOperators"/>
+		<exclude name="SlevomatCodingStandard.Numbers.RequireNumericLiteralSeparator.RequiredNumericLiteralSeparator"/>
 		<exclude name="SlevomatCodingStandard.PHP.UselessParentheses.UselessParentheses"/>
 		<exclude name="SlevomatCodingStandard.Variables.UnusedVariable.UnusedVariable"/>
 		<exclude name="SlevomatCodingStandard.Variables.UselessVariable.UselessVariable"/>
@@ -257,6 +258,8 @@
 				name="SlevomatCodingStandard.TypeHints.DisallowMixedTypeHint.DisallowedMixedTypeHint"/> <!-- Mixed is used too often - in all configurations -->
 		<exclude
 				name="SlevomatCodingStandard.TypeHints.DisallowArrayTypeHintSyntax.DisallowedArrayTypeHintSyntax"/> <!-- Disabled until generics are widely supported -->
+		<exclude name="SlevomatCodingStandard.Functions.RequireArrowFunction.RequiredArrowFunction"/>
+		<exclude name="SlevomatCodingStandard.PHP.RequireExplicitAssertion.RequiredExplicitAssertion"/>
 	</rule>
 	<rule ref="SlevomatCodingStandard.Arrays.TrailingArrayComma"/>
 	<rule ref="SlevomatCodingStandard.Classes.ClassConstantVisibility">
@@ -363,12 +366,12 @@
 			<property name="spacesCountBeforeColon" value="0"/>
 		</properties>
 	</rule>
-	<rule ref="SlevomatCodingStandard.TypeHints.TypeHintDeclaration">
-		<properties>
-			<property name="enableEachParameterAndReturnInspection" value="true"/>
-			<property name="allAnnotationsAreUseful" value="true"/>
-		</properties>
-	</rule>
+	<!--	<rule ref="SlevomatCodingStandard.TypeHints.TypeHintDeclaration">-->
+	<!--		<properties>-->
+	<!--			<property name="enableEachParameterAndReturnInspection" value="true"/>-->
+	<!--			<property name="allAnnotationsAreUseful" value="true"/>-->
+	<!--		</properties>-->
+	<!--	</rule>-->
 	<rule ref="Generic.WhiteSpace.DisallowSpaceIndent"/>
 	<rule ref="Generic.WhiteSpace.ScopeIndent">
 		<properties>
