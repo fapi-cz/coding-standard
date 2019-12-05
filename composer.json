@@ -8,6 +8,6 @@
         }
     ],
     "require": {
-        "consistence/coding-standard": "^3.9"
+        "slevomat/coding-standard": "^6.0"
     }
 }
