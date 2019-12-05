@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ruleset name="FAPI">
+	<rule ref="./ruleset-strict.xml">
+		<exclude name="SlevomatCodingStandard.TypeHints.DeclareStrictTypes.DeclareStrictTypesMissing"/>
+		<exclude name="SlevomatCodingStandard.TypeHints.TypeHintDeclaration.MissingReturnTypeHint"/>
+		<exclude name="SlevomatCodingStandard.TypeHints.TypeHintDeclaration.MissingParameterTypeHint"/>
+
+		<exclude name="PSR1.Files.SideEffects.FoundWithSymbols"/>
+		<exclude name="Generic.PHP.DeprecatedFunctions.Deprecated"/>
+		<exclude name="PSR1.Classes.ClassDeclaration.MultipleClasses"/>
+
+		<exclude name="Squiz.Functions.GlobalFunction.Found"/>
+
+		<exclude name="SlevomatCodingStandard.Classes.SuperfluousInterfaceNaming.SuperfluousSuffix"/>
+		<exclude name="SlevomatCodingStandard.Classes.SuperfluousTraitNaming.SuperfluousSuffix"/>
+
+		<exclude name="Squiz.Classes.ClassFileName.NoMatch"/>
+		<exclude name="PSR1.Classes.ClassDeclaration.MissingNamespace"/>
+		<exclude
+				name="SlevomatCodingStandard.Operators.DisallowIncrementAndDecrementOperators.DisallowedPostDecrementOperator"/>
+		<exclude name="SlevomatCodingStandard.ControlStructures.DisallowEmpty.DisallowedEmpty"/>
+	</rule>
+</ruleset>

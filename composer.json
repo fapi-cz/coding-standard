@@ -1,0 +1,13 @@
+{
+    "name": "fapi-cz/coding-standard",
+    "description": "Base coding standard for FAPI repositories",
+    "authors": [
+        {
+            "name": "Jiří Slischka",
+            "email": "slischkaj@gmail.com"
+        }
+    ],
+    "require": {
+        "consistence/coding-standard": "^3.9"
+    }
+}
