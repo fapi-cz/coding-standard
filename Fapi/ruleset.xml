@@ -21,5 +21,13 @@
 				name="SlevomatCodingStandard.Operators.DisallowIncrementAndDecrementOperators.DisallowedPostDecrementOperator"/>
 		<exclude name="SlevomatCodingStandard.ControlStructures.DisallowEmpty.DisallowedEmpty"/>
 		<exclude name="SlevomatCodingStandard.Files.TypeNameMatchesFileName.NoMatchBetweenTypeNameAndFileName"/>
+
+		<exclude name="SlevomatCodingStandard.Classes.ClassStructure.IncorrectGroupOrder"/>
+		<exclude name="SlevomatCodingStandard.Files.LineLength.LineTooLong"/>
+
+		<exclude name="SlevomatCodingStandard.Classes.PropertySpacing.IncorrectCountOfBlankLinesAfterProperty"/>
+		<exclude name="SlevomatCodingStandard.Classes.ConstantSpacing.IncorrectCountOfBlankLinesAfterConstant"/>
+		<exclude name="SlevomatCodingStandard.Classes.RequireSingleLineMethodSignature.RequiredSingleLineSignature"/>
+		<exclude name="SlevomatCodingStandard.Classes.RequireMultiLineMethodSignature.RequiredMultiLineSignature"/>
 	</rule>
 </ruleset>

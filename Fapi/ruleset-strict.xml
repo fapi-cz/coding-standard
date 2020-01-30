@@ -379,4 +379,16 @@
 			<property name="tabIndent" value="true"/>
 		</properties>
 	</rule>
+	<exclude name="SlevomatCodingStandard.Classes.ParentCallSpacing.IncorrectLinesCountBeforeControlStructure"/>
+	<exclude name="SlevomatCodingStandard.Classes.ParentCallSpacing.IncorrectLinesCountAfterControlStructure"/>
+	<exclude name="SlevomatCodingStandard.Commenting.RequireOneLineDocComment.MultiLineDocComment"/>
+
+	<rule ref="SlevomatCodingStandard.Files.LineLength.LineTooLong">
+		<properties>
+			<property name="lineLengthLimit" value="150"/>
+		</properties>
+	</rule>
+
+	<!-- php 7.4 -->
+	<exclude name="SlevomatCodingStandard.ControlStructures.RequireNullCoalesceEqualOperator.RequiredNullCoalesceEqualOperator"/>
 </ruleset>
