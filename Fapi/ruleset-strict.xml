@@ -2,6 +2,14 @@
 <ruleset name="FAPI">
 	<config name="installed_paths" value="./../../slevomat/coding-standard"/><!-- relative path from PHPCS source location -->
 
+	<exclude name="SlevomatCodingStandard.Classes.PropertySpacing.IncorrectCountOfBlankLinesAfterProperty"/>
+	<exclude name="SlevomatCodingStandard.Classes.ConstantSpacing.IncorrectCountOfBlankLinesAfterConstant"/>
+	<exclude name="SlevomatCodingStandard.Classes.RequireSingleLineMethodSignature.RequiredSingleLineSignature"/>
+	<exclude name="SlevomatCodingStandard.Classes.RequireMultiLineMethodSignature.RequiredMultiLineSignature"/>
+	<exclude name="SlevomatCodingStandard.Classes.ParentCallSpacing.IncorrectLinesCountBeforeControlStructure"/>
+	<exclude name="SlevomatCodingStandard.Classes.ParentCallSpacing.IncorrectLinesCountAfterControlStructure"/>
+	<exclude name="SlevomatCodingStandard.Files.LineLength.LineTooLong"/>
+
 	<rule ref="Generic.Arrays.DisallowLongArraySyntax"/>
 	<rule ref="Generic.Classes.DuplicateClassName"/>
 	<rule ref="Generic.CodeAnalysis.EmptyStatement">
@@ -377,15 +385,6 @@
 		<properties>
 			<property name="indent" value="4"/>
 			<property name="tabIndent" value="true"/>
-		</properties>
-	</rule>
-	<exclude name="SlevomatCodingStandard.Classes.ParentCallSpacing.IncorrectLinesCountBeforeControlStructure"/>
-	<exclude name="SlevomatCodingStandard.Classes.ParentCallSpacing.IncorrectLinesCountAfterControlStructure"/>
-	<exclude name="SlevomatCodingStandard.Commenting.RequireOneLineDocComment.MultiLineDocComment"/>
-
-	<rule ref="SlevomatCodingStandard.Files.LineLength.LineTooLong">
-		<properties>
-			<property name="lineLengthLimit" value="150"/>
 		</properties>
 	</rule>
 
